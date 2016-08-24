@@ -1,0 +1,261 @@
+/*.site-header {
+	background-color: none !important;
+}*/
+
+body, button, input, select, textarea {
+	font-family: 'Adobe Ming Std', serif;
+}
+
+img {
+	border-radius: 0;
+}
+
+.site-branding h1 {
+	font-family: Arial;
+}
+
+.site-branding h1 a {
+	color: #000;
+}
+
+.site-main {
+	   margin-top: 2.618em;
+	   margin-bottom: 0;
+}
+
+.hentry {
+	margin-bottom: 0;
+}
+
+.site-search {
+	display: none;
+}
+
+header, .storefront-primary-navigation {
+	//display: none;
+}
+
+.home.blog .site-header, .home.page:not(.page-template-template-homepage) .site-header, .home.post-type-archive-product .site-header, .no-wc-breadcrumb .site-header {
+	margin-bottom: 0;
+}
+
+.main-navigation ul li a:hover, .main-navigation ul li:hover > a, .site-title a:hover, a.cart-contents:hover, .site-header-cart .widget_shopping_cart a:hover, .site-header-cart:hover > li > a, .site-header ul.menu li.current-menu-item > a {
+	color: #000;
+}
+
+.dd-top {
+	font-size: 18px;
+	line-height: 22px;
+	/*background-image: url(http://displaydistribute.com/JPEGs/Banner_1200_x_2000.jpg);
+	background-size: cover;
+	height: 600px;
+	width: 100%;*/
+}
+
+body.home h1, body.post-type-archive-product h1, body.home header, body.home footer, body.page-id-20 h1.entry-title {
+	display: none;
+}
+
+.storefront-primary-navigation {
+	background: none;
+}
+
+.dd-description {
+	text-align: center;
+	width: auto;
+	margin: 0 auto;
+}
+
+.dd-description a {
+	color: #000;
+}
+.col-full {
+	max-width: 1280px;
+}
+
+.storefront-sorting {
+	display: none;
+}
+
+.gallery-size-thumbnail .gallery-item {
+	width: 15%;
+}
+
+.woocommerce-breadcrumb {
+	display: none;
+}
+
+
+.woocommerce-breadcrumb, #reviews .commentlist li .comment_container {
+	background: none;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message, .woocommerce-noreviews, p.no-comments {
+	background: #000;
+}
+
+.single-product div.product form.cart .button {
+	float: left;
+	margin-left: 1em;
+}
+
+.gallery-caption {
+	font-size: 10px;
+}
+
+@media (min-width: 768px) {
+	.site-header-cart .cart-contents {
+		padding-top: 0;
+	}
+
+	.main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
+		padding: 0 1em;
+	}
+
+	.content-area, .widget-area {
+ 	   margin-bottom: 0;
+	}
+	.dd-courier-table h4 {
+		font-size: 12px;
+		color: #fff;
+		text-align: center;
+	}
+	
+	.dd-courier-table table, .dd-courier-table thead, .dd-courier-table tbody, .dd-courier-table th, .dd-courier-table td, .dd-courier-table tr { 
+	 	display: auto;
+	}
+	.dd-courier-table table { 
+	  width: 100%; 
+	  border-collapse: collapse; 
+	}
+	/* Zebra striping */
+	.dd-courier-table tr:nth-of-type(odd) { 
+	  background: #eee; 
+	}
+	.dd-courier-table th { 
+	  background: #000; 
+	  color: white; 
+	  font-weight: bold; 
+	}
+	.dd-courier-table td, th { 
+	  padding: 6px; 
+	  border: 1px solid #ccc; 
+	  text-align: left; 
+	}
+
+	.dd-top {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	.dd-description {
+		width: 80%;
+	}
+
+	.dd-description img {
+		width: 80px;
+		display: inline-block;
+	}
+
+	.dd-description a.mail-icon {
+		font-size: 1.75em;
+    	vertical-align: sub;
+	}
+
+	.single-product div.product .woocommerce-tabs {
+	    clear: none;
+	}
+
+	.woocommerce-tabs ul.tabs {
+		display: none;
+	    width: 20%;
+	    float: left;
+	    margin-right: 5.8823529412%;
+	}
+
+	.woocommerce-tabs .panel {
+		width: 60%;
+		float: left;
+	}
+
+	.content-area {
+		width: 100% !important;
+	}
+
+	.single-product div.product .images {
+		width: 30%;
+	}
+
+	.single-product div.product .summary {
+		width: 64%;
+	}
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	.dd-courier-table table, .dd-courier-table thead, .dd-courier-table tbody, .dd-courier-table th, .dd-courier-table td, .dd-courier-table tr { 
+		display: block; 
+	}
+	
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.dd-courier-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	.dd-courier-table tr { border: 1px solid #ccc; }
+	
+	.dd-courier-table td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-top: 36px;
+		padding-left: 8px;
+		text-align: left;
+	}
+	
+	.dd-courier-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	.dd-courier-table td:nth-of-type(1):before { content: "靜件號碼 DISPATCH NO."; font-size: 11px;}
+	.dd-courier-table td:nth-of-type(2):before { content: "內容 CONTENTS"; font-size: 11px;}
+	.dd-courier-table td:nth-of-type(3):before { content: "出發點 START POINT"; font-size: 11px;}
+	.dd-courier-table td:nth-of-type(4):before { content: "到達點 END POINT"; font-size: 11px;}
+	.dd-courier-table td:nth-of-type(5):before { content: "體量 WEIGHT"; font-size: 11px;}
+	.dd-courier-table td:nth-of-type(6):before { content: "慢遞人員 COURIER"; font-size: 11px;}
+	.dd-courier-table td:nth-of-type(7):before { content: "物流情況 SHIPPING STATUS"; font-size: 11px;}
+	.dd-courier-table td:nth-of-type(8):before { content: "附注 NOTES"; font-size: 11px;}
+	.dd-courier-table td:nth-of-type(9):before { content: "媒體記錄 DOCUMENTATION"; font-size: 11px;}
+
+	
+	.woocommerce-breadcrumb {
+    	padding-bottom: 0;
+    }
+
+    footer {
+    	text-align: center;
+    }
+
+}
