@@ -1,0 +1,2 @@
+[25-Oct-2016 15:05:12 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/display/public_html/wp-content/themes/storefront/404.php on line 8
+[27-Oct-2016 16:43:42 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/display/public_html/wp-content/themes/storefront/404.php on line 8

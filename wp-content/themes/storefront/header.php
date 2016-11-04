@@ -17,8 +17,26 @@
 
 <?php wp_head(); ?>
 
+<script>
+jQuery(document).ready(function($){
+
+	console.log("ready");
+	$(".toggle").on("click", function() {
+		if($(".toggle").hasClass("hide")) {
+			$(".toggle").removeClass("hide").addClass("show");	
+		} else {
+			$(".toggle").removeClass("show").addClass("hide");	
+		}
+		
+		console.log("clicked");
+	});
+
+});
+</script>
+
 <link rel="stylesheet" id="storefront-style-css" href="http://displaydistribute.com/wp-content/themes/storefront/style-ll.css" type="text/css" media="all"></head>
 <body <?php body_class(); ?>>
+
 
 
 <div id="page" class="hfeed site">

@@ -56,6 +56,7 @@ body.home h1, body.post-type-archive-product h1, body.home header, body.home foo
 	display: none;
 }
 
+
 .storefront-primary-navigation {
 	background: none;
 }
@@ -103,7 +104,72 @@ body.home h1, body.post-type-archive-product h1, body.home header, body.home foo
 	font-size: 10px;
 }
 
+ul.post-meta li {
+	list-style-type: none;
+	width: 100%;
+}
+
+.post-meta-key {
+	display: block;
+}
+.dd-courier-table ul {
+	padding: 2em 0;
+	background: #000;
+
+}
+.dd-courier-table ul li {
+	float: left;
+	width: 12.5%;
+	list-style-type: none;
+	//background: #000;
+	//height: 100px;
+}
+
+body.blog article {
+	border-bottom: 1px solid #ccc;
+}
+
+.gallery .gallery-item .gallery-caption {
+	display: none;
+}
+
+#slb_viewer_wrap .slb_theme_slb_baseline .slb_viewer_overlay {
+	background: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.hide {
+	height: 100px;
+	overflow: hidden;
+}
+
+.show {
+	height: auto;
+	overflow: none;
+}
+
+
 @media (min-width: 768px) {
+	.post-meta-key {
+		display: none;
+	}
+	ul.post-meta li {
+		float: left;
+		width: 11.11%;
+	}
+
+	.hentry.type-post .entry-meta {
+	    width: 90%;
+	    margin-right: 0;
+	}
+
+	body.blog .entry-content {
+		width: 10% !important;
+	}
+	
 	.site-header-cart .cart-contents {
 		padding-top: 0;
 	}
