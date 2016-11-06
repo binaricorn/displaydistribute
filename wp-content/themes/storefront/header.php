@@ -19,17 +19,27 @@
 
 <script>
 jQuery(document).ready(function($){
-
 	console.log("ready");
-	$(".toggle").on("click", function() {
-		if($(".toggle").hasClass("hide")) {
-			$(".toggle").removeClass("hide").addClass("show");	
+	$("article").on("click", function() {
+		//var parentID = $( this ).parent().get( 0 ).tagName;
+		//console.log(parentID)
+		if ($(this).hasClass("hide")) {
+			$(this).removeClass("hide").addClass("show");	
 		} else {
-			$(".toggle").removeClass("show").addClass("hide");	
+			$(this).removeClass("show").addClass("hide");	
 		}
-		
-		console.log("clicked");
 	});
+	// $(".toggle").on("click", function() {
+	// 	//var parentID = $( this ).parent().attr("id");
+	// 	console.log(parentID);
+	// 	if($(".toggle").hasClass("hide")) {
+	// 		$(".toggle").removeClass("hide").addClass("show");	
+	// 	} else {
+	// 		$(".toggle").removeClass("show").addClass("hide");	
+	// 	}
+		
+	// 	console.log("clicked");
+	// });
 
 });
 </script>
