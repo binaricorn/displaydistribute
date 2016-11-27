@@ -104,6 +104,9 @@ body.home h1, body.post-type-archive-product h1, body.home header, body.home foo
 	font-size: 10px;
 }
 
+ul.post-meta {
+	margin: 0;
+}
 ul.post-meta li {
 	list-style-type: none;
 	width: 100%;
@@ -115,18 +118,47 @@ ul.post-meta li {
 .dd-courier-table ul {
 	padding: 2em 0;
 	background: #000;
+	margin: 0;
+	display: none;
 
 }
 .dd-courier-table ul li {
 	float: left;
-	width: 12.5%;
+	display: inline-block;
 	list-style-type: none;
+	padding: 0 19px;
+    text-align: center;
+    width: 11%;
 	//background: #000;
 	//height: 100px;
 }
 
 body.blog article {
 	border-bottom: 1px solid #ccc;
+	padding: 5px 0;
+	position: relative;
+}
+
+body.blog article:after {
+	content: "";
+	  left: 0; 
+	  bottom: 0; 
+	  position: absolute; 
+	  z-index: -1;
+}
+
+body.blog article:hover:after {
+	content: "⇣";
+	  left: 0; 
+	  bottom: 0; 
+	  position: absolute; 
+    z-index: -1;
+    color: #000;
+    font-size: 1em;
+    background: #000;
+    color: #fff;
+    padding: 3px 8px;
+    text-align: center;
 }
 
 .gallery .gallery-item .gallery-caption {
@@ -142,7 +174,7 @@ body.blog article {
 }
 
 .hide {
-	height: 100px;
+	height: 70px;
 	overflow: hidden;
 }
 
@@ -158,16 +190,24 @@ body.blog article {
 	}
 	ul.post-meta li {
 		float: left;
-		width: 11.11%;
+		width: 12.25%;	
+		text-align: center;
+	}
+
+	aside.entry-meta {
+		display: inline-block;
+		width: 90%;
+		font-size: 0.8em;
 	}
 
 	.hentry.type-post .entry-meta {
-	    width: 90%;
 	    margin-right: 0;
 	}
 
 	body.blog .entry-content {
 		width: 10% !important;
+		display: inline-block;
+    	float: right;
 	}
 	
 	.site-header-cart .cart-contents {
@@ -254,6 +294,10 @@ body.blog article {
 
 	.single-product div.product .summary {
 		width: 64%;
+	}
+
+	.dd-courier-table ul {
+		display: block;
 	}
 }
 

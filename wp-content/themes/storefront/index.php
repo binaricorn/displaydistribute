@@ -17,15 +17,15 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="dd-courier-table">
 				<ul>
-					<li><h4>靜件號碼 Dispatch No.</h4></li>
-					<li><h4>內容 Contents</h4></li>
-					<li><h4>出發點 Start Point</h4></li>
-					<li><h4>到達點 End Point</h4></li>
-					<li><h4>數量/體量 Weight/	<br>Quantity</h4></li>
-					<li><h4>慢遞人員 Courier</h4>	</li>
+					<li><h4>靜件號碼<br>Dispatch No.</h4></li>
+					<li><h4>內容<br>Contents</h4></li>
+					<li><h4>出發點<br>Start Point</h4></li>
+					<li><h4>到達點<br>End Point</h4></li>
+					<li><h4>數量/體量<br>Weight/Quantity</h4></li>
+					<li><h4>慢遞人員<br>Courier</h4>	</li>
 					<li><h4>物流情況<br>Shipping Status</h4>	</li>
-					<li><h4>附注 Notation</h4></li>
-					<li><h4>媒體記錄 Tracking</h4></li>
+					<li><h4>附注<br>Notation</h4></li>
+					<li><h4>媒體記錄<br>Tracking</h4></li>
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -39,7 +39,8 @@ get_header(); ?>
 			get_template_part( 'content', 'none' );
 
 		endif; ?>
-
+		<h2 style="text-align: center; padding-top: 1em;">成為展銷場的「後勤」慢遞人員 TO BECOME A COURIER:</h2>
+		<?php echo do_shortcode("[huge_it_forms id='3']"); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
